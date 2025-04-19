@@ -1,0 +1,9 @@
+<div class="product-card">
+  <h3>{{ product.productName }}</h3>
+  <p class="price">Price: {{ formattedPrice }}</p>
+  <p class="description">Description: {{ product.productDescription }}</p>
+  <div class="actions">
+    <button class="edit-btn" (click)="onEdit()">Edit</button>
+    <button class="delete-btn" (click)="delete.emit(product.productId)">Delete</button>
+  </div>
+</div>
